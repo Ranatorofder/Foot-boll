@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:wght@200;300;400;600&family=Playfair+Display:ital@1&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    background-color: #2D25A0;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-nev {
+    width: 100%;
+    /* height: 10vh; */
+    padding-top: 2.625em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+
+}
+
+.main-nev ul {
+    display: flex;
+    margin-left: 13em;
+
+}
+
+.main-nev ul li {
+    list-style: none;
+    padding-left: 36px;
+    color: #fff;
+
+}
+
+.login-main {
+    display: flex;
+    margin-right: 17em;
+    justify-content: center;
+    align-items: center;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+}
+
+.longin-btn {
+    list-style: none;
+    /* margin-right: 17em; */
+    color: #fff;
+
+}
+
+.fa-arrow-right-to-bracket {
+    margin-right: 8px;
+    color: #fff;
+
+}
+
+
+.baner {
+    /* height: 70vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4.188em;
+}
+
+.baner-text h1 {
+    margin-bottom: 25px;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 80px;
+    color: #fff;
+}
+
+.baner-text span {
+    background-color: #E02C6D;
+    padding: 10px 24px;
+}
+
+.baner-text a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #E02C6D;
+    /* padding: 10px 24px; */
+
+
+
+}
+
+.baner-text i {
+    color: #fff;
+}
+
+.baner-img img {
+    width: 34.751em;
+    height: 27.375em;
+}
+
+/* ---------------------
+  top player styles
+--------------------- */
+.top-player {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 100px;
+    grid-gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.player {
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.player img {
+    width: 100%;
+    height: auto;
+
+}
+
+.player p {
+    word-break: break-all;
+}
+
+/* -----------------------
+ clup information styles 
+ --------------------------*/
+
+.club {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.club-text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.club-text h1 {
+    font-size: 50px;
+}
+
+.club-players {
+    padding: 80px;
+    width: 50%;
+
+}
+
+.club-players img {
+    width: 100%;
+    height: auto;
+}
+
+/* ----------------
+    fotter styles
+ --------------- */
+.football {
+    display: flex;
+    justify-content: center;
+
+}
+
+.football-clab {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.football-clab img {
+    width: 227.82px;
+    height: 67.42px;
+
+}
+
+.football-clab i {
+    padding-left: 8px;
+    color: #969BAB;
+}
+
+.club-inner span {
+    margin-top: 35px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+}
+
+.club-inner a {
+    font-size: 16px;
+    /* line-height: 24px; */
+    color: #fff;
+    text-decoration: none;
+    background-color: #E02C6D;
+}
+
+.club-inner i {
+    color: #fff;
+
+}
+
+.club-inner p {
+    margin-bottom: 20px;
+}
+
+
+/*********************
+ most player sercel 
+ ***********************/
+
+
+.inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #222;
+
+}
+
+
+
+
+.container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.container .icaon {
+    position: relative;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container .icaon .img-bx {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 4px #222, 0 0 0 6px #fff;
+    transform: rotate(calc(360deg/8 * var(--i)));
+    transform-origin: 340px;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.container .icaon .activ {
+    box-shadow: 0 0 0 6px #222, 0 0 0 12px #ff1d50 !important;
+}
+
+
+.container .icaon .img-bx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: rotate(calc(-360deg/8 * var(--i)));
+    transition: 0.5s;
+    filter: grayscale(1);
+}
+
+.container .icaon .activ img {
+    filter: grayscale(0);
+}
+
+.content {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    inset: 60px;
+    border: 4px solid transparent;
+    border-left: 4px solid #2196f3;
+    border-right: 4px solid #fff;
+    border-radius: 50%;
+    animation: animte_01 5s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+
+}
+
+@keyframes animte_01 {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.content::after {
+    content: '';
+    position: absolute;
+    inset: 120px;
+    border: 4px solid transparent;
+    border-left: 4px solid #ff1d50;
+    border-right: 4px solid #fff;
+    border-radius: 50%;
+    animation: animte_02 2.5s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+
+}
+
+@keyframes animte_02 {
+    0% {
+        rotate: 360deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+}
+
+.conten-bx {
+    position: absolute;
+    transform: scale(0);
+    transition: 0.5s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conten-bx.activ {
+    transform: scale(1);
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.conten-bx .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.conten-bx .card .img-bx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.conten-bx .card .img-bx img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conten-bx .card .text-bx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conten-bx .card .text-bx h2 {
+    position: relative;
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.conten-bx .card .text-bx h2 span {
+    font-size: 0.65em;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.conten-bx .card .text-bx .sci {
+    position: relative;
+    display: flex;
+    gap: 7px;
+    margin-top: 10px;
+}
+
+.conten-bx .card .text-bx .sci li {
+    list-style: none;
+}
+
+.conten-bx .card .text-bx .sci li a {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4444;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.conten-bx .card .text-bx .sci li a:hover {
+    color: #2196f3;
+}
+
+@media only screen and (max-width:688px) {
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        /* display: block;
+        margin-top: 0; */
+        /* background-color: red; */
+    }
+
+    .main-nev {
+
+        display: none;
+    }
+
+    .baner {
+        margin-top: 0%;
+    }
+
+    .baner img {
+        margin-top: 55px;
+
+    }
+
+    .baner-img img {
+        width: 18em;
+        /* height: 27.375em; */
+    }
+
+    .baner-text h1 {
+        font-size: 3em;
+
+    }
+
+    .top-player {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0%;
+
+    }
+
+    .club {
+        grid-template-columns: repeat(1, 1fr);
+        display: block;
+    }
+
+    .club-text {
+        width: 100%;
+    }
+
+    .club-text h1 {
+        font-size: 30px;
+    }
+
+    .club-players {
+        width: 70%;
+        padding: 10%;
+    }
+
+    .inner {
+        display: none;
+    }
+
+    .football-clab {
+        width: 100%;
+    }
+
+}
